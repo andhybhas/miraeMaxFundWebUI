@@ -17,34 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String scenario = '001. Gerai'
-
-int excelRow = 1
-
-TestData dataTemplate = findTestData('Scenario/ScenarioGerai')
-
-String url = dataTemplate.getValue('url', excelRow)
-
-String username = dataTemplate.getValue('username', excelRow)
-
-String password = dataTemplate.getValue('password', excelRow)
-
-String rememberMe = dataTemplate.getValue('rememberMe', excelRow)
-
-String action = dataTemplate.getValue('action', excelRow)
-
-String header = dataTemplate.getValue('header', excelRow)
-
-WebUI.callTestCase(findTestCase('Page/Web/Log In'), [
-	('scenario') : scenario, 
-	('url') : url, 
-	('username') : username,
-	('password') : password, 
-	('rememberMe') : rememberMe, 
-	('action') : action])
-
-WebUI.callTestCase(findTestCase('Page/Web/Homepage'), [
-	('header') : header])
-
-WebUI.callTestCase(findTestCase('Page/Web/Entities - Gerai'), [:])
-

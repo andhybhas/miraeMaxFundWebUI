@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>f52fdd26-b80e-46ce-8b69-018e32b76759</dataFileGUID>
-   <dataSourceUrl>C:\Andhy\miraeMaxFundWebUI\Scenario\ScenarioEntities.xlsx</dataSourceUrl>
+   <dataSourceUrl>Scenario/ScenarioEntities.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>Gerai</sheetName>

@@ -46,5 +46,5 @@ WebUI.callTestCase(findTestCase('Page/Web/Log In'), [
 WebUI.callTestCase(findTestCase('Page/Web/Homepage'), [
 	('header') : header])
 
-WebUI.callTestCase(findTestCase('Page/Web/Entities - Regency'), [:])
+WebUI.callTestCase(findTestCase('Page/Web/Entities - Email Template'), [:])
 
