@@ -75,5 +75,66 @@ if (header == 'Regency' || header == 'Province' || header == 'Country' || header
 	} else if (header == 'Sign Out') {
 		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Account Sign Out'))
 	}
+} else if (header == 'Applicants' || header == 'Rejected Applicants' || header == 'On Validation Applicants' || header == 'Investors' || header == 'Suspended Investors' || header == 'Investor Update') {
+	WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Clients'))
+	if (header == 'Applicants') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Clients Applicants'))
+	} else if (header == 'Rejected Applicants') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Clients Rejected Applicants'))
+	} else if (header == 'On Validation Applicants') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Clients On Validation Applicants'))
+	} else if (header == 'Investors') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Clients Investors'))
+	} else if (header == 'Suspended Investors') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Clients Suspended Investors'))
+	} else if (header == 'Investor Update') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Clients Investor Update'))
+	}
+} else if (header == 'Orders' || header == 'Rejected Orders' || header == 'Outstanding Orders' || header == 'Batch Orders' || header == 'Disbursement' || header == 'Redemp Reconciliation' || header == 'List of Portfolios' || header == 'NAB Correction') {
+	WebUI.focus(findTestObject('Object Repository/Web/Homepage/Button - Order'))
+	if (header == 'Orders') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Order Orders'))
+	} else if (header == 'Rejected Orders') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Order Rejected Orders'))
+	} else if (header == 'Outstanding Orders') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Order Outstanding Orders'))
+	} else if (header == 'Batch Orders') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Order Batch Orders'))
+	} else if (header == 'Disbursement') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Order Disbursement'))
+	} else if (header == 'Redemp Reconciliation') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Order Redemp Reconciliation'))
+	} else if (header == 'List of Portfolios') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Order List of Portfolios'))
+	} else if (header == 'NAB Correction') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Order NAB Correction'))
+	}
+} else if (header == 'Transactions') {
+	WebUI.focus(findTestObject('Object Repository/Web/Homepage/Button - Transaction'))
+	if (header == 'Transactions') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Transaction Transactions'))
+	}
+} else if (header == 'Investment Managers' || header == 'Mutual Funds' || header == 'Mutual Funds Protected' || header == 'Custodian Banks' || header == 'Mutual Fund Update' || header == 'Custodian Bank Update' || header == 'NAV - Return' || header == 'Update Data Mutual Fund') {
+	WebUI.focus(findTestObject('Object Repository/Web/Homepage/Button - Products'))
+	if (header == 'Investment Managers') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Product Investment Managers'))
+	} else if (header == 'Mutual Funds') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Mutual Funds'))
+	} else if (header == 'Mutual Funds Protected') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Mutual Funds Protected'))
+	} else if (header == 'Custodian Banks') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Custodian Banks'))
+	} else if (header == 'Mutual Fund Update') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Mutual Fund Update'))
+	} else if (header == 'Custodian Bank Update') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Custodian Bank Update'))
+	} else if (header == 'NAV - Return') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Product NAV - Return'))
+	} else if (header == 'Update Data Mutual Fund') {
+		WebUI.click(findTestObject('Object Repository/Web/Homepage/Button - Product Update Data Mutual Fund'))
+	}
 }
+
+
+
 
